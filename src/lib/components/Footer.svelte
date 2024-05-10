@@ -12,7 +12,7 @@
 </script>
 
 <!-- {#if $uiSettings.showAppDownloadFooter} -->
-	<section class="text-gray-600 body-font">
+	<section class="text-gray-600 body-font bg-gray-900 bg-opacity-50 rounded-b-3xl">
 		<div
 			class="container max-w-screen-xl border-gray-100 px-4 py-8 mx-auto flex items-center md:flex-row flex-col"
 		>

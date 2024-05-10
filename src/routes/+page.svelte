@@ -1,9 +1,14 @@
 <script>
+// @ts-nocheck
+
 	import MainMenu from '$lib/components/MainHeader.svelte';
 	import Counter from '$lib/components/Counter.svelte';
 	import dove from '$lib/images/icons/dove.png';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+
+	import Carousel from '$lib/components/Carousel-1.svelte'
+	
 </script>
+
 
 <svelte:head>
 	<title>Home</title>
@@ -14,41 +19,44 @@
 <!--
 _____________________ Hero Section __________________________________
 -->
-<div class="bg-[url('https://img.freepik.com/free-photo/low-angle-shot-church-interior-with-mesmerizing-medieval-art_181624-7761.jpg?t=st=1715015502~exp=1715019102~hmac=625388a96fa87a4b0253396b09707ec3c333a1c705b4f36519df0ddaad01b0df&w=900')]
- h-[560px] w-full bg-cover">
 
- <div class="bg-gray-900 bg-opacity-20 w-full h-full">
-	<div class="p-12">
-		<MainMenu />
+<div class="relative bg-gray-200">
+	<div class="absolute inset-0">
+		<Carousel />
 	</div>
-
-	<div class="text-gray-100 px-16 -mt-12">
-		<div class="my-3">
-			<img src="{dove}" class="w-20" alt="Dove Icon">
+	
+	<div class="relative bg-black bg-opacity-50 w-full h-[560px]">
+		<div class="p-12">
+			<MainMenu />
 		</div>
-		<div class="my-3 text-xl text-blue-600 font-semibold">
-			Embracing Togetherness
+	
+		<div class="text-gray-100 px-16 -mt-12">
+			<div class="my-3">
+				<img src="{dove}" class="w-20" alt="Dove Icon">
+			</div>
+			<div class="my-3 text-xl text-gray-50 w-fit bg-blue-600 bg-opacity-40 p-1 font-semibold">
+				Embracing Togetherness
+			</div>
+			<div class="my-1 text-5xl font-bold">
+				That They May All Be One
+			</div>
+			<div class="my-6 font-light text-sm w-2/3">
+				A union of believers grounded in the mystical union of Christ and His Church. 
+				The Bible speaks of a two-way transaction that occurs when a person is regenerated. 
+				Every converted person becomes “in Christ” at the same time Christ enters into the 
+				believer. Thus if I am in Christ and you are in Christ, He being in us, 
+				then we are profoundly united in Christ.
+			</div>
+			<div class="bg-cyan-800 text-gray-50 w-32 px-5 py-2 rounded-md">
+				Contact Us
+			</div>
+	
 		</div>
-		<div class="my-1 text-5xl font-bold">
-			That They May All Be One
-		</div>
-		<div class="my-6 font-light text-sm w-2/3">
-			A union of believers grounded in the mystical union of Christ and His Church. 
-			The Bible speaks of a two-way transaction that occurs when a person is regenerated. 
-			Every converted person becomes “in Christ” at the same time Christ enters into the 
-			believer. Thus if I am in Christ and you are in Christ, He being in us, 
-			then we are profoundly united in Christ.
-		</div>
-		<div class="bg-cyan-800 text-gray-50 w-32 px-5 py-2 rounded-md">
-			Contact Us
-		</div>
-
-	</div>
- </div>
+	 </div>
 </div>
 
 
-<div class="-mt-20">
+<div class="-mt-20 relative">
 	<div class="grid grid-cols-2 gap-4 p-12">
 		<div class="bg-gray-50 rounded-md p-4">
 			<div class="grid grid-cols-12 gap-4">
@@ -68,6 +76,9 @@ _____________________ Hero Section __________________________________
 					</div>
 				</div>
 				<div class="col-span-9">
+					<div class="text-sm text-blue-500 mb-2 bg-gray-300 w-fit p-0.5 font-thin">
+						Upcoming !
+					</div>
 					<div class="text-lg mb-2 font-semibold">
 						Event:Ruwadzano RAGM
 					</div>
@@ -95,6 +106,9 @@ _____________________ Hero Section __________________________________
 					</div>
 				</div>
 				<div class="col-span-9">
+					<div class="text-sm text-blue-500 mb-2 bg-gray-300 w-fit p-0.5 font-thin">
+						Upcoming !
+					</div>
 					<div class="text-lg mb-2 font-semibold">
 						Event:Ruwadzano RAGM
 					</div>
@@ -110,7 +124,11 @@ _____________________ Hero Section __________________________________
 
 <div class="container px-12">
 	<div class="grid grid-cols-12 gap-6">
-		<div class="bg-slate-500 col-span-5 bg-opacity-40 h-full rounded-md">
+		<div class="col-span-5 flex h-full rounded-md pl-4">
+			<div class="bg-blue-500 relative w-11/12 scale-x-110 h-4/5 mt-1 rounded-md">
+			</div>
+			<div class=" bg-[url('$lib/images/gradient/bg-grad-01.png')] bg-cover w-80 h-4/5 mt-[40px] -ml-48 rounded-md">
+			</div>
 		</div>
 		<div class="col-span-7">
 			<div class="font-semibold text-md uppercase text-blue-700">
@@ -134,32 +152,231 @@ _____________________ Hero Section __________________________________
 					 region.
 			</div>
 			<div class="font-bold text-lg w-4/5 my-4">
-				The name of the Lord is a strong tower; the righteous run into it and are safe.
+				<i>The name of the Lord is a strong tower; the righteous run into it and are safe.</i>
 			</div>
-			<div class="bg-cyan-800 text-gray-50 w-32 px-5 py-2 rounded-md">
-				Contact Us
+			<div class="grid grid-cols-2 gap-4">
+				<div>
+					<div class="bg-blue-500 rounded-full p-2 w-10">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-50">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+						</svg>						  
+					</div>
+					<div class="font-bold text-lg text-gray-500 my-4">
+						The "UKAMA" Concept
+					</div>
+					<div>
+						Embracing friendship and sharing each other’s joys and burdens
+					</div>
+				</div>
+
+				<div>
+					<div class="bg-blue-500 rounded-full p-2 w-10">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-50">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+						</svg>													
+					</div>
+					<div class="font-bold text-lg text-gray-500 my-4">
+						That They May All Be One
+					</div>
+					<div>
+						...The body does not consist of one member but of many.
+					</div>
+				</div>
+
+			</div>
+
+		
+			<div class="bg-cyan-800 text-gray-50 my-8 w-32 px-5 py-2 rounded-md">
+				Learn More
 			</div>
 		</div>
 
 	</div>
 </div>
 
-
+<!-- 
 <div class="mt-8 bg-[url('https://img.freepik.com/free-photo/low-angle-shot-church-interior-with-mesmerizing-medieval-art_181624-7761.jpg?t=st=1715015502~exp=1715019102~hmac=625388a96fa87a4b0253396b09707ec3c333a1c705b4f36519df0ddaad01b0df&w=900')]
  h-[560px] w-full bg-cover">
-	<div class="bg-gray-900 bg-opacity-20 w-full h-full my-auto flex justify-center">
-		<div>
-			<div class="my-6 text-3xl text-gray-50 w-2/3">
+	<div class="bg-gray-900 bg-opacity-20 w-full h-full my-auto flex justify-center ">
+		<div class="items-center w-full my-auto">
+			<div class="my-6 text-center text-3xl text-gray-50 w-2/3">
 				God, our Creator, has stored within our minds and personalities, 
 				great potential strength and ability. Prayer helps us tap and develop these powers.
 			</div>
-			<div class="my-6 items-center">
+			<div class="my-6 content-center items-center">
 				<div class="bg-cyan-800 text-gray-50 w-32 px-5 py-2 rounded-md">
 					Contact Us
 				</div>
 			</div>
 		</div>
 
+	</div>
+</div> -->
+
+<div class="mt-8 bg-[url('https://img.freepik.com/free-photo/low-angle-shot-church-interior-with-mesmerizing-medieval-art_181624-7761.jpg?t=st=1715015502~exp=1715019102~hmac=625388a96fa87a4b0253396b09707ec3c333a1c705b4f36519df0ddaad01b0df&w=900')]
+ h-[450px] w-full bg-cover">
+	<div class="bg-gray-900 bg-opacity-20 h-[450px] w-full flex items-center" align="center">
+		<div class="">
+			<div class="bg-blue-500 rounded-full p-2 w-12">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-50">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+				  </svg>																				
+			</div>
+			<div class="my-6 text-center font-extrabold text-3xl text-gray-50 w-2/3">
+				"Charity is a virtue with which when our affections are perfectly ordered, it unites us to God.
+				For by it we demonstrate our love for God.” 
+			</div>
+			<div class="my-16 content-center items-center">
+				<div class="bg-gray-900 bg-opacity-15 font-semibold border-2 border-blue-500 text-gray-50 w-fit px-5 py-2 rounded-md">
+					GIVE TODAY
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="my-16">
+	<div class="flex justify-center text-blue-600 font-semibold uppercase">
+		Councils
+	</div>
+	<div class="flex justify-center text-3xl font-extrabold">
+		Our Spiritual Councils
+	</div>
+	<div class="flex justify-center text-3xl font-extrabold">
+		<div class="h-1 w-32 bg-gray-200 flex justify-between overflow-hidden mt-4">
+			<div class="w-12 h-full bg-slate-400" />
+			<div class="w-12 h-full bg-blue-700" />
+			<div class="w-12 h-full bg-slate-400" />
+		</div>
+	</div>
+	<div class="flex justify-end -mt-12 mr-8">
+		<div class="bg-blue-500 transform rotate-45 p-2 h-10 w-10 rounded">
+			  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-50 transform -rotate-45">
+				<path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+			  </svg>																						  
+		</div>
+		<div class="bg-blue-500 transform rotate-45 p-2 h-10 w-10 ml-4 rounded">	
+			  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-50 transform -rotate-45">
+				<path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+			  </svg>																						  
+		</div>
+	</div>
+	<div class="flex flex-wrap mx-4 mt-8">
+		<div class="w-full sm:w-1/2 md:w-1/3 px-4">
+		  <div class="bg-white rounded-lg border-b-4 border-blue-500">
+			<div class="bg-slate-500 h-48 w-full rounded-t-lg"></div>
+			<div class="flex justify-center text-lg font-semibold my-4">
+				Ruwadzano
+			</div>
+			<div class="flex justify-center px-8 pb-8">
+				A women's fellowship within the UCCZ that focuses 
+				on promoting spiritual growth, empowerment, and community 
+				development among women. Ruwadzano, which means "fellowship" 
+				in the Shona language, aims to unite women within the church 
+				and empower them to contribute positively to their families, 
+				churches, and society.
+			</div>
+		  </div>
+		</div>
+		<div class="w-full sm:w-1/2 md:w-1/3 px-4">
+		  <div class="bg-white rounded-lg border-b-4 border-blue-500">
+			<div class="bg-slate-500 h-48 w-full rounded-t-lg"></div>
+			<div class="flex justify-center text-lg font-semibold my-4">
+				Men`s Fellowship
+			</div>
+			<div class="flex justify-center px-8 pb-8">
+				A women's fellowship within the UCCZ that focuses 
+				on promoting spiritual growth, empowerment, and community 
+				development among women. Ruwadzano, which means "fellowship" 
+				in the Shona language, aims to unite women within the church 
+				and empower them to contribute positively to their families, 
+				churches, and society.
+			</div>
+		  </div>
+		</div>
+		<div class="w-full sm:w-1/2 md:w-1/3 px-4">
+		  <div class="bg-white rounded-lg border-b-4 border-blue-500">
+			<div class="bg-slate-500 h-48 w-full rounded-t-lg"></div>
+			<div class="flex justify-center text-lg font-semibold my-4">
+				CYF
+			</div>
+			<div class="flex justify-center px-8 pb-8">
+				A women's fellowship within the UCCZ that focuses 
+				on promoting spiritual growth, empowerment, and community 
+				development among women. Ruwadzano, which means "fellowship" 
+				in the Shona language, aims to unite women within the church 
+				and empower them to contribute positively to their families, 
+				churches, and society.
+			</div>
+		  </div>
+		</div>
+	  </div>
+</div>
+
+<div class="mt-24 bg-[url('$lib/images/banners/banner-03.png')]
+ h-[450px] w-full bg-cover bg-bottom">
+	<div class="bg-gray-900 bg-opacity-50 h-[450px] w-full grid grid-cols-12 gap-4 px-4">
+		<div class="col-span-4 flex justify-center">
+			<div class="w-11/12 mb-24 -mt-12 rounded-md bg-blue-500" align="center">
+				<div class="bg-slate-800 rounded-full my-8 p-2.5 h-12 w-12">
+					  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-50">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+					  </svg>																								  
+				</div>
+				<div class="my-4 text-center font-bold text-3xl text-gray-50">
+					Call Us 
+				</div>
+				<div class="h-1 w-32 bg-gray-200 flex justify-between overflow-hidden my-8">
+					<div class="w-12 h-full bg-blue-500" />
+					<div class="w-12 h-full bg-gray-50" />
+					<div class="w-12 h-full bg-blue-500" />
+				</div>
+
+				<div class="font-light text-base text-gray-50 my-12">
+					UCCZ Head Office 34 2nd Ave, <br>Harare, Zimbabwe
+				</div>
+
+				<div class="font-bold text-2xl text-gray-50 mb-4 my-4">
+					+263(242) 8937373
+				</div>
+
+				<div class="font-light text-base text-gray-50 my-8">
+					info@uccz.org
+				</div>
+
+				<!-- <div>
+					<input placeholder="email@example.com" type="email" class="w-11/12 border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required/>
+					<textarea placeholder="Your Message" class="w-11/12 my-3 border border-gray-300 px-4 py-2 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+
+					<div class="w-11/12 bg-gray-900 bg-opacity-15 font-semibold border-2 border-blue-500 text-gray-50 px-5 py-2 rounded-md">
+						Submit
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<div class="col-span-8 p-20">
+			<div class="text-blue-600 font-semibold uppercase my-3">
+				Get In Touch
+			</div>
+			<div class="text-3xl font-extrabold text-gray-50 my-6">
+				Don't Hesitate To Contact Us
+			</div>
+			<div class="text-3xl font-extrabold my-4">
+				<div class="h-1 w-32 bg-gray-200 flex justify-between overflow-hidden mt-4">
+					<div class="w-12 h-full bg-slate-400" />
+					<div class="w-12 h-full bg-blue-700" />
+					<div class="w-12 h-full bg-slate-400" />
+				</div>
+			</div>
+			<div class="font-light text-base text-gray-50 my-8">
+				Being of one kingdom, together we belong. In Him we both function. We are 
+				all members of His body, His workmanship, chosen and called unto Him, the Alpha & Omega.
+			</div>
+			<div class="w-fit bg-gray-900 bg-opacity-15 font-semibold border-2 border-blue-500 text-gray-50 px-5 py-2 rounded-md">
+				Contact Us
+			</div>
+		</div>
+		
 	</div>
 </div>
 
