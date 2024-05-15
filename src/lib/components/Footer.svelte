@@ -12,7 +12,7 @@
 </script>
 
 <!-- {#if $uiSettings.showAppDownloadFooter} -->
-	<section class="text-gray-600 body-font bg-gray-900 bg-opacity-50 rounded-b-3xl">
+	<section class="text-gray-600 body-font rounded-b-3xl">
 		<div
 			class="container max-w-screen-xl border-gray-100 px-4 py-8 mx-auto flex items-center md:flex-row flex-col"
 		>
@@ -23,7 +23,7 @@
 					Available on IOS and Android
 				</h2>
 				<h1 class="text-2xl md:text-3xl font-light title-font text-gray-900">
-					Download our Gateway Stream Apps for Free
+					Download Your Nduyo Hymnal App for Free !
 				</h1>
 			</div>
 			<div
@@ -83,142 +83,89 @@
 		<div
 			class="md:w-1/3 md:pr-12 md:py-1 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
 			<h1 class="text-lg font-normal title-font mb-2 text-gray-900">
-				Wherever, Whenever, Whatever, we are here for you.
+				That They May All Be One.
 			</h1>
-			<p class="leading-normal text-sm font-light text-left">
-				The ultimate one-stop-shop for borderless buying and selling. Find hotels, lodges, holiday
-				homes, cruises, holiday packages, activities, restaurants, cabs, airport shuttles, and
-				gifts, all in one place.
+			<p class="leading-normal text-sm font-light text-center">
+				Unity is strength, unity is a harmony, a symphony of different entities.We may not be the same; but we do embrace
+				our differences and find strength in our shared sonship in Jesus the Christ.
 			</p>
 			<!-- <a href="." class="text-gray-800 inline-flex items-center mt-4 text-sm"
 				>Looking for Gateway Stream Media?
 			</a> -->
 		</div>
 		<div class="flex flex-col md:w-2/3 md:pl-12">
-			<h2 class="title-font font-light text-gray-800 tracking-wider text-2xl md:text-3xl mb-3">
+			<!-- <h2 class="title-font font-light text-gray-800 tracking-wider text-2xl md:text-3xl mb-3">
 				Quick Links
-			</h2>
-
+			</h2> -->
 			<nav class="flex flex-wrap list-none -mb-1 text-xs font-light">
-				<li class="lg:w-1/5 mb-2 w-1/2 flex flex-col py-4">
-					<p class="text-gray-900 hover:text-gray-800 text-sm font-normal mb-1">About Us</p>
-					<a href="/about-us" class="text-gray-600 hover:text-gray-800 mb-1">About Gateway Stream</a
+				<li class="lg:w-1/4 mb-2 w-1/2 flex flex-col py-4">
+					<h2 class="title-font font-light text-gray-800 tracking-wider text-xl md:text-2xl mb-3">
+						Info
+					</h2>
+					<!-- <p class="text-gray-900 hover:text-gray-800 text-sm font-normal mb-1">About Us</p> -->
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Who We Are</a
 					>
-					<a href="/contact-us" class="text-gray-600 hover:text-gray-800 mb-1">Contact Support</a>
-					<a href="/privacy-policy" class="text-gray-600 hover:text-gray-800 mb-1">Privacy Policy</a
+					<a href="/about-us" class="text-gray-600 hover:text-gray-800 mb-1">What We Do</a
 					>
-					<a href="/terms-of-service" class="text-gray-600 hover:text-gray-800 mb-1"
-						>Terms of Service</a
+					<a href="/events" class="text-gray-600 hover:text-gray-800 mb-1">Events</a
 					>
-					<a href="/download-app" class="text-gray-600 hover:text-gray-800 mb-1">Download Apps</a>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Careers</a
+					>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Download Apps</a>
 					<!-- <a href="/blog" class="text-gray-600 hover:text-gray-800 mb-1">Our Blog</a> -->
 				</li>
 
-				<li class="lg:w-1/5 mb-2 w-1/2 flex flex-col py-4">
-					<p class="text-gray-900 hover:text-gray-800 text-sm font-normal mb-1">
-						Hospitality & Leisure
-					</p>
-					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Book Your Next Stay </a>
+				<li class="lg:w-1/4 mb-2 w-1/2 flex flex-col py-4">
+					<h2 class="title-font font-light text-gray-800 tracking-wider text-xl md:text-2xl mb-3">
+						Useful Links
+					</h2>
+					<!-- <p class="text-gray-900 hover:text-gray-800 text-sm font-normal mb-1">About Us</p> -->
+					<a href="/news" class="text-gray-600 hover:text-gray-800 mb-1">Blog & Updates</a
+					>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Support FAQs</a>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Privacy Policy</a
+					>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1"
+						>Projects</a
+					>
+					<a href="/download-app" class="text-gray-600 hover:text-gray-800 mb-1">Nduyo Dzokudira</a>
+					<!-- <a href="/blog" class="text-gray-600 hover:text-gray-800 mb-1">Our Blog</a> -->
+				</li>
+
+				<li class="lg:w-1/4 mb-2 w-1/2 flex flex-col py-4">
+					<h2 class="title-font font-light text-gray-800 tracking-wider text-xl md:text-2xl mb-3">
+						Latest News 
+					</h2>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Post About 1</a>
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<!-- svelte-ignore a11y-missing-attribute -->
-					<a href="/list-your-property" class="text-gray-600 hover:text-gray-800 mb-1"
-						>List your Property</a
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1"
+						>Post About 2</a
 					>
-					<a href="/conference-venues" class="text-gray-600 hover:text-gray-800 mb-1"
-						>Conference Venues</a
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1"
+						>Post About 3</a
 					>
-					<a href="/hot-deals" class="text-gray-600 hover:text-gray-800 mb-1">Hot Deals</a>
-					<a href="/auctions" class="text-gray-600 hover:text-gray-800 mb-1">Online Auctions</a>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Post About 4</a>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Post About 5</a>
 				</li>
 
-				<li class="lg:w-1/5 mb-1 w-1/2 flex flex-col py-4">
-					<p class="text-gray-900 hover:text-gray-800 text-sm font-normal mb-1">
-						Online Shopping
-					</p>
-					<a
-						href="https://shop.gatewaystream.com/product-category/electronic-gadgets/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Electronic Gadgets</a
-					>
-					<a
-						href="https://shop.gatewaystream.com/product-category/fruits-veges/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Fruit & Veggies</a
-					>
-
-					<a
-						href="https://shop.gatewaystream.com/product-category/baby/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Baby & Toddler</a
-					>
-
-					<a
-					href="https://shop.gatewaystream.com/product-category/clothing/"
-					class="text-gray-600 hover:text-gray-800 mb-1"
-					target="_blank">Clothing</a
-				>
-					<a href="/shipping-information" class="text-gray-600 hover:text-gray-800 mb-1"
-						>Shipping Information</a
-					>
-				</li>
-				<li class="lg:w-1/5 mb-1 w-1/2 flex flex-col py-4">
-					<p class="text-gray-900 hover:text-gray-800 text-sm font-normal mb-1">Food Deliveries</p>
-					<a
-						href="https://eats.gatewaystream.com/product-category/breakfast/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Breakfast</a
-					>
-					<a
-						href="https://eats.gatewaystream.com/product-category/burgers/ "
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Burgers</a>
-					<a
-						href="https://eats.gatewaystream.com/product-category/salads/ "
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Salads</a
-					>
-					<a
-						href="https://eats.gatewaystream.com/product-category/sandwich-nibles/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Sandwiches & Nibbles</a
-					>
-					<a
-						href="https://eats.gatewaystream.com/delivery/ "
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Delivery Information</a
-					>
+				<li class="lg:w-1/4 mb-1 w-1/2 flex flex-col py-4">
+					<h2 class="title-font font-light text-gray-800 tracking-wider text-xl md:text-2xl mb-3">
+						Get In Touch 
+					</h2>
+					
+					<div class="mb-1">
+						+(263) 123 456 789
+					</div>
+					<div class="mb-1">
+						info@uccz.org
+					</div>
+					<div class="mb-1">
+						UCCZ Head Office 34 2nd Ave, <br/>Harare, Zimbabwe
+					</div>
+					
 				</li>
 
-				<li class="lg:w-1/5 mb-1 w-1/2 flex flex-col py-4 px-3">
-					<p class="text-gray-900 hover:text-gray-800 text-sm font-normal mb-1">
-						Liquor Deliveries
-					</p>
-					<a
-						href="https://liquor.gatewaystream.com/product-category/whiskey/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Whiskey</a
-					>
-					<a
-						href="https://liquor.gatewaystream.com/product-category/gin/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Gin</a
-					>
-					<a
-						href="https://liquor.gatewaystream.com/product-category/wine/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Wine</a
-					>
-					<a
-						href="https://liquor.gatewaystream.com/product-category/vodka/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Vodka</a
-					>
-					<a
-						href="https://liquor.gatewaystream.com/delivery-information/"
-						class="text-gray-600 hover:text-gray-800 mb-1"
-						target="_blank">Delivery Information</a
-					>
-				</li>
 			</nav>
 		</div>
 	</div>
@@ -234,10 +181,10 @@
 		<p
 			class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-400 sm:py-2 sm:mt-0 mt-4"
 		>
-			&copy; {new Date().getFullYear()} Gateway Stream — The future is here now
+			&copy; {new Date().getFullYear()} United Church Of Christ In Zimbabwe
 		</p>
 		<span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-			<a href="https://www.facebook.com/gatewaystream" class="text-teal-400">
+			<a href="https://www.facebook.com/uccz" class="text-teal-400">
 				<svg
 					fill="currentColor"
 					stroke-linecap="round"
@@ -249,7 +196,7 @@
 					<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
 				</svg>
 			</a>
-			<a href="https://x.com/GatewayStream?s=20" class="ml-3 text-teal-400">
+			<a href="https://x.com/Uccz" class="ml-3 text-teal-400">
 				<svg
 					fill="currentColor"
 					stroke-linecap="round"
@@ -263,7 +210,7 @@
 					/>
 				</svg>
 			</a>
-			<a href="https://www.instagram.com/gateway_stream/" class="ml-3 text-teal-400">
+			<a href="https://www.instagram.com/uccz/" class="ml-3 text-teal-400">
 				<svg
 					fill="none"
 					stroke="currentColor"
@@ -278,7 +225,7 @@
 				</svg>
 			</a>
 			<a
-				href="https://www.linkedin.com/company/gateway-stream/mycompany/"
+				href="https://www.linkedin.com/company/uccz/mycompany/"
 				class="ml-3 text-teal-400"
 			>
 				<svg

@@ -6,6 +6,8 @@
     import dove from '$lib/images/icons/dove.png';
     import care from '$lib/images/icons/dove.png';
     import bible from '$lib/images/icons/dove.png';
+    // import bible from '$lib/images/slider/slider-04.jpg';
+    // import bible from '$lib/images/icons/dove.png';
 
 
 	
@@ -73,12 +75,14 @@
 </script>
 
 <div class="siema">
-	<!-- {#each data as d} -->
+	<!-- {#each data as d}
+    <div class="bg-[url('{d.bg}')] h-[560px] w-full bg-cover">
+	</div> -->
 	<div class="bg-[url('{data[0].bg}')] h-[560px] w-full bg-cover">
 	</div>
-    <div class="bg-[url('{data[1].bg}')] h-[560px] w-full bg-cover">
+    <div class="bg-[url('$lib/images/slider/slider-04.jpg')] h-[560px] w-full bg-cover">
 	</div>
-    <div class="bg-[url('{data[2].bg}')] h-[560px] w-full bg-cover">
+    <div class="bg-[url('$lib/images/slider/slider-03.jpg')] h-[560px] w-full bg-cover">
 	</div>
 	<!-- {/each} -->
 </div>
