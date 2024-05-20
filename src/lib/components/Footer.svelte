@@ -128,7 +128,7 @@
 					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1"
 						>Projects</a
 					>
-					<a href="/download-app" class="text-gray-600 hover:text-gray-800 mb-1">Nduyo Dzokudira</a>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Nduyo Dzokudira</a>
 					<!-- <a href="/blog" class="text-gray-600 hover:text-gray-800 mb-1">Our Blog</a> -->
 				</li>
 

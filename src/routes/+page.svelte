@@ -93,7 +93,7 @@ _____________________ Hero Section __________________________________
 				</div>
 			</div>
 		</div>
-		<div class="bg-gray-50 rounded-md p-4 hidden md:col-span-1">
+		<div class="bg-gray-50 rounded-md p-4 hidden md:block md:col-span-1">
 			<div class="grid grid-cols-12 gap-4">
 				<div class="col-span-3">
 					<div class="bg-opacity-30">
