@@ -14,7 +14,7 @@
 <!-- {#if $uiSettings.showAppDownloadFooter} -->
 	<section class="text-gray-600 body-font rounded-b-3xl">
 		<div
-			class="container max-w-screen-xl border-gray-100 px-4 py-8 mx-auto flex items-center md:flex-row flex-col"
+			class="container max-w-screen-xl border-gray-100 px-4 py-8 mx-auto flex justify-between items-center md:flex-row flex-col"
 		>
 			<div
 				class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center"
@@ -27,9 +27,9 @@
 				</h1>
 			</div>
 			<div
-				class="flex flex-col md:flex-row space-y-4 md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 md:space-x-4 md:space-y-0"
+				class="flex justify-end items-end mr-2 flex-shrink-0 md:space-x-4 md:space-y-0"
 			>
-			<a href="https://play.google.com/store/apps/details?id=com.dapl.rtg&hl=en&gl=US">
+			<a href="https://play.google.com/" class="mr-2">
 				<button
 					class="bg-slate-700 text-white inline-flex py-2 px-5 w-full rounded items-center hover:bg-gray-800 focus:outline-none"
 				>
@@ -49,7 +49,7 @@
 					</span>
 				</button>
 			</a>
-			<a href="https://apps.apple.com/us/app/gateway-stream/id1278291701">
+			<a href="https://apps.apple.com/">
 				<button
 					class="bg-slate-700 text-white inline-flex py-2 px-5 w-full rounded items-center hover:bg-gray-800 focus:outline-none"
 				>
@@ -136,17 +136,21 @@
 					<h2 class="title-font font-light text-gray-800 tracking-wider text-xl md:text-2xl mb-3">
 						Latest News 
 					</h2>
-					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Post About 1</a>
-					<!-- svelte-ignore a11y-click-events-have-key-events -->
-					<!-- svelte-ignore a11y-missing-attribute -->
-					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1"
-						>Post About 2</a
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">
+						Volunteers 2024 NAGM</a
 					>
 					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1"
-						>Post About 3</a
+						>GU Project Update</a
 					>
-					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Post About 4</a>
-					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">Post About 5</a>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1"
+						>Education Council @Musirizwi </a
+					>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">
+						UCCM Jubilee celebrations</a
+					>
+					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">
+						Hatfield  Church Mother`s Day</a
+					>
 				</li>
 
 				<li class="lg:w-1/4 mb-1 w-1/2 flex flex-col py-4">

@@ -360,7 +360,7 @@ _____________________ Hero Section __________________________________
 			</div>
 		</div>
 		<div class="col-span-12 md:col-span-8 p-3 md:p-20">
-			<div class="text-blue-300 font-semibold uppercase my-3">
+			<div class="text-blue-200 font-semibold uppercase my-3">
 				Get In Touch
 			</div>
 			<div class="text-3xl font-extrabold text-gray-50 my-6">

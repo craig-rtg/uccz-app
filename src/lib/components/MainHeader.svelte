@@ -9,7 +9,7 @@
 
 	let mobileOpen = false;
 
-	$: currentRoute = $page.url.pathname;
+	// $: currentRoute = $page.url.pathname;
 
 	const primaryMenuItems = [
 		{
@@ -50,54 +50,42 @@
 		}
 	];
 
-	// const getRandomBannerPromo = () => {
-	// 	let bannerPromos = $globalStore?.bannerPromos ?? [];
-
-	// 	if (bannerPromos?.length === 0 ?? false) {
-	// 		return null;
-	// 	}
-	// 	const randomIndex = Math.floor(Math.random() * bannerPromos.length);
-	// 	return bannerPromos[randomIndex];
-	// };
 
 	let userMenuOpen = false;
-	// let bannerPromo = getRandomBannerPromo();
-	// globalStore.subscribe((val) => {
-	// 	bannerPromo = getRandomBannerPromo();
-	// });
-	export let session;
-	export let currentUrl;
-	let first_name = "";
 
-	if(session){
-		console.log(session);
-		const full_name = session.user.user_metadata.full_name;
-		first_name = full_name ? full_name.split(' ')[0] : 'User';
-	}
+	// export let session;
+	// export let currentUrl;
+	// let first_name = "";
+
+	// if(session){
+	// 	console.log(session);
+	// 	const full_name = session.user.user_metadata.full_name;
+	// 	first_name = full_name ? full_name.split(' ')[0] : 'User';
+	// }
 
 	beforeNavigate(() => (mobileOpen = false));
 
-	$: userNotLoggedIn = !session;
+	// $: userNotLoggedIn = !session;
 </script>
 <section class="px-1 md:px-6">
     <div class="grid grid-cols-12 gap-2 text-gray-600">
         <div class="col-span-4 -ml-5">
             <div class="flex justify-center">
                 <div class="md:flex hidden justify-between w-11/12 p-2 px-4 bg-slate-50 rounded-md">
-                    <a href="/" class="href">
-                        <div>
+                    <a href="/" class="hover:no-underline">
+                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             Who We Are
                         </div>
                     </a>
     
-                    <a href="/about-us" class="href">
-                        <div>
+                    <a href="/about-us" class="hover:no-underline">
+                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             About Us
                         </div>
                     </a>
     
-                    <a href="/events" class="">
-                        <div>
+                    <a href="/events" class="hover:no-underline">
+                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             Events
                         </div>
                     </a>
@@ -120,18 +108,18 @@
             <div class="hidden md:flex justify-center  w-full p-2 bg-slate-50 rounded-md">
                 <div class="flex justify-between w-11/12 ">
 
-                    <a href="/news" class="href">
-                        <div>
+                    <a href="/news" class="hover:no-underline">
+                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             News & Updates
                         </div>
                     </a>
                     <a href="/donate" class="href">
-                        <div>
+                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             Donate
                         </div>
                     </a>
                     <a href="/contact-us" class="href">
-                        <div>
+                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             Contact Us
                         </div>
                     </a>

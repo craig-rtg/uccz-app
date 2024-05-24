@@ -223,7 +223,7 @@
             <summary class="py-2 outline-none cursor-pointer focus:underline">What are your terms and conditions?</summary>
             <div class="px-4 pb-4">
               <p>You can find our detailed terms and conditions by visiting our 
-                <a href="/terms-of-service" class="underline">Terms of Service</a> 
+                <a href="." class="underline">Terms of Service</a> 
                 page on our website. It includes information about our policies, user guidelines, and more.</p>
             </div>
           </details>

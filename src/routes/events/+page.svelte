@@ -2,31 +2,27 @@
 // @ts-nocheck
 	import bible from '$lib/images/icons/bible.png';
   import MainMenu from '$lib/components/MainHeader.svelte';
-  import { onMount } from 'svelte';
-  
-  let calendarData = [];
+  import Calendar from '@event-calendar/core';
+  import TimeGrid from '@event-calendar/time-grid';
 
-  // Function to generate calendar data for every four months from now
-  function generateCalendarData() {
-    let currentDate = new Date();
-    for (let i = 0; i < 4; i++) {
-      let nextMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + i, 1);
-      let month = nextMonth.toLocaleString('default', { month: 'long' });
-      let year = nextMonth.getFullYear();
-      let daysInMonth = new Date(year, nextMonth.getMonth() + 1, 0).getDate();
 
-      calendarData.push({
-        month: month,
-        year: year,
-        daysInMonth: daysInMonth
-      });
-    }
+  let plugins = [TimeGrid];
+    let options = {
+        view: 'timeGridWeek',
+        events: [
+            // your list of events
+        ]
+  };
+
+  let buttonText = {
+    close: 'Close', 
+    dayGridMonth: 'month', 
+    listDay: 'list', 
+    timeGridDay: 'day', 
+    timeGridWeek: 'week', 
+    today: 'today'
   }
 
-  // Call the function to generate calendar data on component mount
-  onMount(() => {
-    generateCalendarData();
-  });
 </script>
 <div>
     <div class="bg-[url('https://img.freepik.com/free-photo/low-angle-shot-church-interior-with-mesmerizing-medieval-art_181624-7761.jpg?t=st=1715015502~exp=1715019102~hmac=625388a96fa87a4b0253396b09707ec3c333a1c705b4f36519df0ddaad01b0df&w=900')] 
@@ -57,27 +53,7 @@
     </div>
 </div>
 
-<!-- Calendar HTML -->
-<div class="max-w-md mx-auto bg-white rounded-lg shadow overflow-hidden p-4">
-  <h2 class="text-xl font-semibold mb-4">Next Four Months Calendar</h2>
-  <!-- Loop through the calendar data and render each month -->
-  {#each calendarData as { month, year, daysInMonth }}
-    <div class="mb-8">
-      <h3 class="text-lg font-semibold mb-2">{month} {year}</h3>
-      <div class="grid grid-cols-7 gap-1">
-        <!-- Weekdays -->
-        <div class="text-sm font-medium text-gray-500">Sun</div>
-        <div class="text-sm font-medium text-gray-500">Mon</div>
-        <div class="text-sm font-medium text-gray-500">Tue</div>
-        <div class="text-sm font-medium text-gray-500">Wed</div>
-        <div class="text-sm font-medium text-gray-500">Thu</div>
-        <div class="text-sm font-medium text-gray-500">Fri</div>
-        <div class="text-sm font-medium text-gray-500">Sat</div>
-        <!-- Calendar Dates -->
-        {#each Array.from({ length: daysInMonth }, (_, index) => index + 1) as day}
-          <div class="text-sm font-medium text-gray-800">{day}</div>
-        {/each}
-      </div>
-    </div>
-  {/each}
+<div class="m-4">
+  <Calendar {plugins} {options} />
 </div>
+  

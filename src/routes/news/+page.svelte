@@ -33,3 +33,66 @@
         </div>
     </div>
 </div>
+<main class="container mx-auto px-4 py-8">
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <!-- svelte-ignore a11y-img-redundant-alt -->
+      <img src="https://via.placeholder.com/400x200" alt="Blog Post Image" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-2">The Importance of Prayer</h2>
+        <p class="text-gray-600 mb-4">Discover the transformative power of prayer and how it can deepen your relationship with God.</p>
+        <a href="." class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Read More</a>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <!-- svelte-ignore a11y-img-redundant-alt -->
+      <img src="https://via.placeholder.com/400x200" alt="Blog Post Image" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-2">Overcoming Doubt and Fear</h2>
+        <p class="text-gray-600 mb-4">Learn how to confront your doubts and fears with faith and trust in God.</p>
+        <a href="." class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Read More</a>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <!-- svelte-ignore a11y-img-redundant-alt -->
+      <img src="https://via.placeholder.com/400x200" alt="Blog Post Image" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-2">Spiritual Growth through Worship</h2>
+        <p class="text-gray-600 mb-4">Explore the transformative power of worship and how it can deepen your spiritual journey.</p>
+        <a href="." class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Read More</a>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <!-- svelte-ignore a11y-img-redundant-alt -->
+      <img src="https://via.placeholder.com/400x200" alt="Blog Post Image" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-2">Finding Joy in the Midst of Trials</h2>
+        <p class="text-gray-600 mb-4">Discover how to cultivate joy and peace even during life's most challenging circumstances.</p>
+        <a href="." class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Read More</a>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <!-- svelte-ignore a11y-img-redundant-alt -->
+      <img src="https://via.placeholder.com/400x200" alt="Blog Post Image" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-2">The Transformative Power of Forgiveness</h2>
+        <p class="text-gray-600 mb-4">Learn how the act of forgiveness can bring healing and restoration to your life.</p>
+        <a href="." class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Read More</a>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <!-- svelte-ignore a11y-img-redundant-alt -->
+      <img src="https://via.placeholder.com/400x200" alt="Blog Post Image" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-2">Navigating Difficult Relationships with Faith</h2>
+        <p class="text-gray-600 mb-4">Discover practical tips for maintaining godly relationships and overcoming conflicts.</p>
+        <a href="." class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Read More</a>
+      </div>
+    </div>
+  </section>
+</main>

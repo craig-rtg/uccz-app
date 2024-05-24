@@ -1,16 +1,16 @@
 
 <script>
-// @ts-nocheck
+  // @ts-nocheck
 
-    import bible from '$lib/images/icons/bible.png';
-    import MainMenu from '$lib/components/MainHeader.svelte';
+  import bible from '$lib/images/icons/bible.png';
+  import MainMenu from '$lib/components/MainHeader.svelte';
 
 	import { enhance } from '$app/forms';
 	let working = false;
 	let errorMsg = '';
 	let successMsg = '';
 
-	export let data;
+	// export let data;
 
 	let contactForm = {
 		name: '',
