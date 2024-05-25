@@ -85,7 +85,7 @@
 			<h1 class="text-lg font-normal title-font mb-2 text-gray-900">
 				That They May All Be One.
 			</h1>
-			<p class="leading-normal text-sm font-light text-center">
+			<p class="leading-normal text-base font-light text-center">
 				Unity is strength, unity is a harmony, a symphony of different entities.We may not be the same; but we do embrace
 				our differences and find strength in our shared sonship in Jesus the Christ.
 			</p>
@@ -97,7 +97,7 @@
 			<!-- <h2 class="title-font font-light text-gray-800 tracking-wider text-2xl md:text-3xl mb-3">
 				Quick Links
 			</h2> -->
-			<nav class="flex flex-wrap list-none -mb-1 text-xs font-light">
+			<nav class="flex flex-wrap list-none -mb-1 text-base font-light">
 				<li class="lg:w-1/4 mb-2 w-1/2 flex flex-col py-4">
 					<h2 class="title-font font-light text-gray-800 tracking-wider text-xl md:text-2xl mb-3">
 						Info
@@ -143,13 +143,13 @@
 						>GU Project Update</a
 					>
 					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1"
-						>Education Council @Musirizwi </a
+						>Education Council @... </a
 					>
 					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">
-						UCCM Jubilee celebrations</a
+						UCCM Jubilee Cel..</a
 					>
 					<a href="/" class="text-gray-600 hover:text-gray-800 mb-1">
-						Hatfield  Church Mother`s Day</a
+						Hatfield Mother`s Day</a
 					>
 				</li>
 
