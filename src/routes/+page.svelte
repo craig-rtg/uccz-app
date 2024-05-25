@@ -1,23 +1,21 @@
 <script>
 // @ts-nocheck
-
 	import MainMenu from '$lib/components/MainHeader.svelte';
-	import Counter from '$lib/components/Counter.svelte';
 	import dove from '$lib/images/icons/dove.png';
-	import Carousel from '$lib/components/Carousel-1.svelte'
-
+	import Carousel from '$lib/components/Carousel.svelte';
+	import AnimateToLeft from '$lib/components/AnimateToRight.svelte';
+	import AnimateToRight from '$lib/components/AnimateToLeft.svelte';
+	import AnimateToLeft2s from '$lib/components/AnimateToLeft-2s.svelte';
 	import ruwadzano from '$lib/images/other/ruwadzano-01.jpg';
 	import cmf from '$lib/images/other/cmf.png';
 	import cyf from '$lib/images/other/cyf-agm-01.jpg';
 	import sunday from '$lib/images/other/ruwadzano-01.jpg';
-
-
-	
+	import AnimateBottomUp from '$lib/components/AnimateBottomUp.svelte';
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="UCCZ Church" />
 </svelte:head>
 
 <section class="mb-12">
@@ -39,27 +37,28 @@ _____________________ Hero Section __________________________________
 			<div class="my-3">
 				<img src="{dove}" class="w-20" alt="Dove Icon">
 			</div>
-			<div class="my-3 text-xl text-gray-50 w-fit bg-blue-600 bg-opacity-40 p-1 font-semibold">
+			<div class="my-3 text-xl text-cyan-200 w-fit bg-blue-600 bg-opacity-30 p-1 font-semibold">
 				Embracing Togetherness
 			</div>
 			<div class="my-1 text-3xl md:text-5xl font-bold">
 				That They May All Be One
 			</div>
-			<div class="my-2 md:my-6 font-light text-xs md:text-sm md:w-2/3">
+			<div class="my-2 md:my-6 font-light text-xs md:text-base md:w-2/3">
 				A union of believers grounded in the mystical union of Christ and His Church. 
 				The Bible speaks of a two-way transaction that occurs when a person is regenerated. 
 				Every converted person becomes “in Christ” at the same time Christ enters into the 
 				believer. Thus if I am in Christ and you are in Christ, He being in us, 
 				then we are profoundly united in Christ.
 			</div>
-			<div class="bg-cyan-800 text-gray-50 my-4 md:my-0 w-32 px-5 py-2 rounded-md">
-				Contact Us
-			</div>
+			<a href="/contact-us" class="hover:no-underline relative z-[100]">
+				<div class="bg-cyan-800 hover:scale-105 hover:bg-blue-500 text-gray-50 my-4 md:my-0 w-32 px-5 py-2 rounded-md">
+					Contact Us
+				</div>
+			</a>
 	
 		</div>
 	 </div>
 </div>
-
 
 <div class="-mt-12 md:-mt-20 relative">
 	<div class="grid grid-cols-2 gap-4 p-4 md:p-12">
@@ -73,7 +72,7 @@ _____________________ Hero Section __________________________________
 							</svg>							  
 						</div>
 						<div class="bg-cyan-300 bg-opacity-30 text-lg py-1 h-8 text-center">
-							April
+							May
 						</div>
 						<div class="bg-slate-700 rounded-b-md text-gray-50 p-1 h-8 text-center">
 							0000 Hrs
@@ -85,7 +84,7 @@ _____________________ Hero Section __________________________________
 						Upcoming !
 					</div>
 					<div class="text-lg mb-2 font-semibold">
-						Event:Ruwadzano RAGM
+						Event:Ruwadzano NAGM
 					</div>
 					<div class="text-md underline">
 						Event Details
@@ -103,7 +102,7 @@ _____________________ Hero Section __________________________________
 							</svg>
 						</div>
 						<div class="bg-cyan-300 bg-opacity-30 text-lg py-1 h-8 text-center">
-							April
+							Dec
 						</div>
 						<div class="bg-slate-700 rounded-b-md text-gray-50 p-1 h-8 text-center">
 							0000 Hrs
@@ -115,7 +114,7 @@ _____________________ Hero Section __________________________________
 						Upcoming !
 					</div>
 					<div class="text-lg mb-2 font-semibold">
-						Event:Ruwadzano RAGM
+						Event:Volunteers RAGM
 					</div>
 					<div class="text-md underline">
 						Event Details
@@ -136,11 +135,11 @@ _____________________ Hero Section __________________________________
 			</div>
 		</div>
 		<div class="col-span-12 md:col-span-7 px-8 md:px-0">
-			<div class="font-semibold text-md uppercase text-blue-700">
+			<div class="font-semibold text-md uppercase text-blue-700">				
 				About UCCZ
 			</div>
 			<div class="font-bold text-3xl text-gray-900 w-4/5 my-4">
-				Working towards the betterment of communities beyond...
+				<AnimateToLeft data = "Working towards the betterment of communities beyond..." />				
 			</div>
 			<div class="h-1 w-32 bg-gray-200 flex justify-between overflow-hidden mt-4">
                 <div class="w-12 h-full bg-slate-400" />
@@ -148,13 +147,15 @@ _____________________ Hero Section __________________________________
                 <div class="w-12 h-full bg-slate-400" />
 			</div>
 
-			<div class="text-sm w-4/5 mt-4">
+			<div class="text-sm md:text-base w-4/5 mt-4">
+				<AnimateToLeft2s data = "
 				UCCZ, United Church of Christ in Zimbabwe, is a Christian denomination
 				 located in Zimbabwe. It is a member of the World Council of Churches and the
 				  All Africa Conference of Churches. The UCCZ has a rich history that dates back
 				   to the early 20th century when American missionaries from the American Board
 				    of Commissioners for Foreign Missions (ABCFM) established the church in the
 					 region.
+				" />
 			</div>
 			<div class="font-bold text-lg w-4/5 my-4">
 				<i>The name of the Lord is a strong tower; the righteous run into it and are safe.</i>
@@ -170,7 +171,9 @@ _____________________ Hero Section __________________________________
 						The "UKAMA" Concept
 					</div>
 					<div>
-						Embracing friendship and sharing each other’s joys and burdens
+						<AnimateToRight data = "
+							Embracing friendship and sharing each other’s joys and burdens
+						" />
 					</div>
 				</div>
 
@@ -184,16 +187,20 @@ _____________________ Hero Section __________________________________
 						That They May All Be One
 					</div>
 					<div>
-						...The body does not consist of one member but of many.
+						<AnimateToLeft data = "
+							...The body does not consist of one member but of many.
+						" />
+
 					</div>
 				</div>
 
 			</div>
 
-		
-			<div class="bg-cyan-800 text-gray-50 my-8 w-32 px-5 py-2 rounded-md">
-				Learn More
-			</div>
+			<a href="/about-us" class="hover:no-underline">
+				<div class="bg-cyan-700 hover:scale-105 hover:bg-blue-500 text-gray-50 my-8 w-32 px-5 py-2 rounded-md">
+					Learn More
+				</div>
+			</a>
 		</div>
 
 	</div>
@@ -228,14 +235,18 @@ _____________________ Hero Section __________________________________
 				  </svg>																				
 			</div>
 			<div class="my-2 md:my-6 text-center font-extrabold text-xl md:text-3xl text-gray-50 w-2/3">
-				"Charity is a virtue with which when our affections are perfectly ordered, it unites us to God.
-				For by it we demonstrate our love for God.” 
+				<!-- <AnimateToLeft data = " -->
+				Charity is a virtue with which when our affections are perfectly ordered, it unites us to God.
+				For by it we demonstrate our love for God. 
+				<!-- "/> -->
 			</div>
-			<div class="my-6 md:my-16 content-center items-center">
-				<div class="bg-gray-900 bg-opacity-15 font-semibold border-2 border-blue-500 text-gray-50 w-fit px-5 py-2 rounded-md">
-					GIVE TODAY
+			<a href="/donate" class="hover:no-underline">
+				<div class="my-6 md:my-16 content-center items-center">
+					<div class="bg-gray-900 hover:bg-blue-500 hover:scale-105 bg-opacity-15 font-semibold border-2 border-blue-500 text-gray-50 w-fit px-5 py-2 rounded-md">
+						<AnimateToLeft data = "GIVE TODAY" />
+					</div>
 				</div>
-			</div>
+			</a>
 		</div>
 	</div>
 </div>
@@ -245,7 +256,9 @@ _____________________ Hero Section __________________________________
 		Councils
 	</div>
 	<div class="flex justify-center text-xl md:text-3xl font-extrabold">
-		Our Spiritual Councils
+		<AnimateBottomUp data = "
+			Our Spiritual Councils
+		"/>
 	</div>
 	<div class="flex justify-center text-3xl font-extrabold">
 		<div class="h-1 w-32 bg-gray-200 flex justify-between overflow-hidden mt-4">
@@ -271,15 +284,19 @@ _____________________ Hero Section __________________________________
 		  <div class="bg-white rounded-lg border-b-4 border-blue-500">
 			<div class="bg-slate-500 bg-cover bg-center bg-[url('$lib/images/other/ruwadzano-01.jpg')] h-48 w-full rounded-t-lg"></div>
 			<div class="flex justify-center text-lg font-semibold my-4">
-				Ruwadzano
+				<!-- <AnimateToRight data = " -->
+					Ruwadzano
+				<!-- "/> -->
 			</div>
 			<div class="flex justify-center px-8 pb-8">
-				A women's fellowship within the UCCZ that focuses 
-				on promoting spiritual growth, empowerment, and community 
-				development among women. Ruwadzano, which means "fellowship" 
-				in the Shona language, aims to unite women within the church 
-				and empower them to contribute positively to their families, 
-				churches, and society.
+				<!-- <AnimateBottomUp data = " -->
+					A women's fellowship within the UCCZ that focuses 
+					on promoting spiritual growth, empowerment, and community 
+					development among women. Ruwadzano, which means fellowship 
+					in the Shona language, aims to unite women within the church 
+					and empower them to contribute positively to their families, 
+					churches, and society.
+				<!-- "/> -->
 			</div>
 		  </div>
 		</div>
@@ -287,15 +304,19 @@ _____________________ Hero Section __________________________________
 		  <div class="bg-white rounded-lg border-b-4 border-blue-500">
 			<div class="bg-slate-500 bg-cover bg-[url('$lib/images/other/cmf.png')] h-48 w-full rounded-t-lg"></div>
 			<div class="flex justify-center text-lg font-semibold my-4">
-				Men`s Fellowship
+				<!-- <AnimateBottomUp data = " -->
+					Men`s Fellowship
+				<!-- "/> -->
 			</div>
 			<div class="flex justify-center px-8 pb-8">
-				Men's fellowship within , is a council that focuses 
+				<!-- <AnimateBottomUp data = " -->
+				Men`s fellowship within , is a council that focuses 
 				on promoting spiritual growth, empowerment, and community 
-				development among men. As the name "fellowship" suggests,
+				development among men. As the name fellowship suggests,
 				the council aims to empower men within UCCZ 
 				to contribute positively to their families, business,
 				churches, society and in any other disciplines beyond the recited.
+				<!-- "/> -->
 			</div>
 		  </div>
 		</div>
@@ -303,15 +324,19 @@ _____________________ Hero Section __________________________________
 		  <div class="bg-white rounded-lg border-b-4 border-blue-500">
 			<div class="bg-slate-500 bg-cover bg-center bg-[url('$lib/images/other/cyf.jpg')] h-48 w-full rounded-t-lg"></div>
 			<div class="flex justify-center text-lg font-semibold my-4">
-				CYF
+				<!-- <AnimateToLeft data = " -->
+					CYF
+				<!-- "/> -->
 			</div>
 			<div class="flex justify-center px-8 pb-8">
-				CYF, the Christian Youth fellowship, is dedicated to fostering
-				 spiritual growth, empowerment, and community development among
-				  young adults. Its primary objective is to bring together young 
-				  adults in the United Church Of Christ and empower them to make 
-				  positive contributions to their families, churches, society, 
-				  and beyond.
+				<!-- <AnimateBottomUp data = " -->
+					CYF, the Christian Youth fellowship, is dedicated to fostering
+					spiritual growth, empowerment, and community development among
+					young adults. Its primary objective is to bring together young 
+					adults in the United Church Of Christ and empower them to make 
+					positive contributions to their families, churches, society, 
+					and beyond.
+				  <!-- "/> -->
 			</div>
 		  </div>
 		</div>
@@ -360,11 +385,13 @@ _____________________ Hero Section __________________________________
 			</div>
 		</div>
 		<div class="col-span-12 md:col-span-8 p-3 md:p-20">
-			<div class="text-blue-200 font-semibold uppercase my-3">
+			<div class="text-blue-300 p-1 bg-gray-900 bg-opacity-30 w-fit font-semibold uppercase my-3">
 				Get In Touch
 			</div>
 			<div class="text-3xl font-extrabold text-gray-50 my-6">
-				Don't Hesitate To Contact Us
+				<AnimateToRight data = "
+					Don't Hesitate To Contact Us
+				"/>
 			</div>
 			<div class="text-3xl font-extrabold my-4">
 				<div class="h-1 w-32 bg-gray-200 flex justify-between overflow-hidden mt-4">
@@ -374,12 +401,16 @@ _____________________ Hero Section __________________________________
 				</div>
 			</div>
 			<div class="font-light text-base text-gray-50 my-8">
-				Being of one kingdom, together we belong. In Him we both function. We are 
-				all members of His body, His workmanship, chosen and called unto Him, the Alpha & Omega.
+				<AnimateToLeft data = "
+					Being of one kingdom, together we belong. In Him we both function. We are 
+					all members of His body, His workmanship, chosen and called unto Him, the Alpha & Omega.
+				"/>
 			</div>
-			<div class="w-fit bg-gray-900 bg-opacity-15 font-semibold border-2 border-blue-500 text-gray-50 px-5 py-2 rounded-md">
-				Contact Us
-			</div>
+			<a href="/contact-us" class="hover:no-underline">
+				<div class="w-fit hover:bg-blue-500 hover:scale-105 bg-gray-900 bg-opacity-15 font-semibold border-2 border-blue-500 text-gray-50 px-5 py-2 rounded-md">
+					Contact Us
+				</div>
+			</a>
 		</div>
 		
 	</div>

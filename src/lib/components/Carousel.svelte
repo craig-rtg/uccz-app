@@ -82,7 +82,7 @@
 	</div>
     <div class="bg-[url('$lib/images/slider/slider-04.jpg')] h-[560px] w-full bg-cover">
 	</div>
-    <div class="bg-[url('$lib/images/slider/slider-03.jpg')] h-[560px] w-full bg-cover">
+    <div class="bg-[url('$lib/images/slider/slider-03.jpg')] h-[560px] w-full bg-cover bg-bottom">
 	</div>
 	<!-- {/each} -->
 </div>

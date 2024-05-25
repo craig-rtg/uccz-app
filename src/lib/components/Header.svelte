@@ -6,7 +6,7 @@
 	// import { HeadsetHelpIcon } from '@indaco/svelte-iconoir/components/HeadsetHelpIcon.svelte';
 </script>
 
-<div class="w-full bg-blue-800 bg-opacity-95 h-10 px-2 md:px-12 text-gray-50">
+<div class="w-full bg-blue-800 bg-opacity-95 h-10 px-2 md:px-14 text-cyan-300">
 	<div class="flex flex-row justify-between py-2 px-4">
 		<div class="flex">
 			<svg class="w-4 h-4 md:w-5 md:h-5 text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -17,7 +17,7 @@
 					+263 &#40;242&#41; 4121212
 			</span>
 		</div>
-		<div class="mx-auto text-lg font-bold">
+		<div class="mx-auto text-lg flex justify-center md:-mr-4 text-gray-100">
 			<span class="hidden md:block"> United Church Of Christ In Zimbabwe, Welcomes You ! </span>
 			<span class="block md:hidden"> Welcome </span>
 		</div>

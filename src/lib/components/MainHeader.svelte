@@ -67,25 +67,25 @@
 
 	// $: userNotLoggedIn = !session;
 </script>
-<section class="px-1 md:px-6">
-    <div class="grid grid-cols-12 gap-2 text-gray-600">
-        <div class="col-span-4 -ml-5">
+<section class="px-1 md:px-">
+    <div class="grid grid-cols-12 gap-2 text-gray-600 font-semibold">
+        <div class="col-span-5 -ml-5">
             <div class="flex justify-center">
-                <div class="md:flex hidden justify-between w-11/12 p-2 px-4 bg-slate-50 rounded-md">
+                <div class="md:flex hidden justify-start gap-8 w-11/12 p-2 px-4 text-blue-50 rounded-md">
                     <a href="/" class="hover:no-underline">
-                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
+                        <div class="px-3 py-1 hover:scale-105 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             Who We Are
                         </div>
                     </a>
     
                     <a href="/about-us" class="hover:no-underline">
-                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
+                        <div class="px-3 py-1 hover:scale-105 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             About Us
                         </div>
                     </a>
     
                     <a href="/events" class="hover:no-underline">
-                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
+                        <div class="px-3 py-1  hover:scale-105 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             Events
                         </div>
                     </a>
@@ -94,7 +94,7 @@
             </div>
 
         </div>
-        <div class="col-span-4 text-xxl flex justify-center" >
+        <div class="col-span-2 text-xxl flex justify-center" >
             <!-- <hr> -->
             <!-- <div class="w-24 border-t border-gray-200 mt-4 opacity-50"></div>                 -->
             <div>                
@@ -104,22 +104,22 @@
             </div>
             <!-- <div class="w-24 border-t border-gray-200 mt-4 opacity-50"></div>                 -->
         </div>
-        <div class="col-span-4 ">
-            <div class="hidden md:flex justify-center  w-full p-2 bg-slate-50 rounded-md">
-                <div class="flex justify-between w-11/12 ">
+        <div class="col-span-5 ">
+            <div class="hidden md:flex justify-center  w-full p-2 text-blue-50 rounded-md">
+                <div class="flex justify-end gap-8 w-11/12 ">
 
                     <a href="/news" class="hover:no-underline">
-                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
+                        <div class="px-3 py-1 hover:scale-105 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             News & Updates
                         </div>
                     </a>
-                    <a href="/donate" class="href">
-                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
+                    <a href="/donate" class="hover:no-underline">
+                        <div class="px-3 py-1 hover:scale-105 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             Donate
                         </div>
                     </a>
-                    <a href="/contact-us" class="href">
-                        <div class="px-3 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
+                    <a href="/contact-us" class="hover:no-underline">
+                        <div class="px-3 py-1 hover:scale-105 hover:bg-blue-500 hover:rounded-full hover:text-gray-50">
                             Contact Us
                         </div>
                     </a>
